@@ -21,5 +21,5 @@ variable "node_2" {
 }
 
 data "opennebula_image" "demo2023" {
-  name = "demo2023"
+  name = "EXAM"
 }
