@@ -1,4 +1,4 @@
-resource "opennebula_host" "node-1" {
+/*resource "opennebula_host" "node-1" {
   name = "10.13.1.1"
   type = "kvm"
 
@@ -16,4 +16,12 @@ resource "opennebula_host" "node-2" {
     cpu    = 4000
     memory = 67108864
   }
+}*/
+
+data "opennebula_host" "node-1" {
+  name = "10.13.1.1"
+}
+
+data "opennebula_host" "node-2" {
+  name = "10.13.2.1"
 }

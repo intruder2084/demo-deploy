@@ -62,7 +62,7 @@ resource "opennebula_template" "node-1" {
   
 
   disk {
-    image_id = data.opennebula_image.demo2023.id
+    image_id = data.opennebula_image.demo2023-1.id
     target = local.vm_disk_target
     driver = local.vm_disk_driver
   }
@@ -98,7 +98,7 @@ resource "opennebula_template" "node-2" {
   
 
   disk {
-    image_id = data.opennebula_image.demo2023.id
+    image_id = data.opennebula_image.demo2023-2.id
     target = local.vm_disk_target
     driver = local.vm_disk_driver
   }

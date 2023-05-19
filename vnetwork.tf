@@ -1,4 +1,4 @@
-resource "opennebula_virtual_network" "vm_network" {
+/*resource "opennebula_virtual_network" "vm_network" {
   name            = "vnet"
   physical_device = "br0"
   type            = "bridge"
@@ -15,4 +15,8 @@ resource "opennebula_virtual_network_address_range" "vm_address_range" {
   ar_type            = "ETHER"
   size               = 100
   mac                = "AA:AA:AA:00:00:01"
+}*/
+
+data "opennebula_virtual_network" "demo-vnet" {
+  name = "vnet"
 }

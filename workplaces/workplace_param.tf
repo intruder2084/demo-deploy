@@ -1,6 +1,6 @@
 locals {
-  vm_cpu                 = "9"
-  vm_vcpu                = "9"
+  vm_cpu                 = "8"
+  vm_vcpu                = "8"
   vm_memory              = "2048"
   vm_graph_type          = "VNC"
   vm_graph_listen        = "0.0.0.0"
@@ -20,6 +20,10 @@ variable "node_1" {
 variable "node_2" {
 }
 
-data "opennebula_image" "demo2023" {
-  name = "demo2023"
+data "opennebula_image" "demo2023-1" {
+  name = "EXAM"
+}
+
+data "opennebula_image" "demo2023-2" {
+  name = "EXAM2"
 }

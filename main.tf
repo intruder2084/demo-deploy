@@ -17,7 +17,7 @@ provider "opennebula" {
 
 module "workplaces" {
   source            = "./workplaces"
-  vm_nic_network_id = opennebula_virtual_network.vm_network.id
-  node_1            = opennebula_host.node-1.id
-  node_2            = opennebula_host.node-2.id
+  vm_nic_network_id = data.opennebula_virtual_network.demo-vnet.id
+  node_1            = data.opennebula_host.node-1.id
+  node_2            = data.opennebula_host.node-2.id
 }
