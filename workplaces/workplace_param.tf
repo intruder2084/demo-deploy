@@ -1,7 +1,7 @@
 locals {
   vm_cpu                 = "8"
   vm_vcpu                = "8"
-  vm_memory              = "2048"
+  vm_memory              = "8192"
   vm_graph_type          = "VNC"
   vm_graph_listen        = "0.0.0.0"
   vm_os_arch             = "x86_64"
